@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracto Refacciones | Partes Diesel para Tractocamiones – Cd. Juárez & El Paso TX</title>
+  <meta name="description" content="Refacciones 100% nuevas para tractocamiones y motores diesel grandes. Mancuernas, transmisiones, motores completos, cabinas y más. Atendemos Cd. Juárez, Chihuahua y El Paso, Texas." />
+  <meta name="keywords" content="refacciones tractocamiones, refacciones diesel Juárez, motores diesel, transmisiones camiones, cabinas tractocamiones, mancuernas diesel, partes El Paso Texas, refacciones Chihuahua, motor diesel grande, refacciones cummins, refacciones detroit" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tracto Refacciones" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tracto Refacciones | Partes Diesel para Tractocamiones" />
+  <meta property="og:description" content="Refacciones 100% nuevas para tractocamiones – Cd. Juárez, México & El Paso, TX. Motores, transmisiones, mancuernas, cabinas y más." />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Tracto Refacciones" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-red':     '#C41E3A',   /* carmesí — acento principal  */
+            'brand-red-dk':  '#8B1520',   /* carmesí oscuro — sombra     */
+            'brand-red-lt':  '#E5304A',   /* carmesí claro — brillo      */
+            'brand-orange':  '#D42035',   /* carmesí medio — destello    */
+            'brand-dark':    '#0A0A0A',
+            'brand-dark2':   '#111111',
+            'brand-dark3':   '#1C1C1C',
+            'brand-dark4':   '#252525',
+            'brand-dark5':   '#333333',
+            'brand-silver':  '#9E9E9E',
+            'brand-silver2': '#CCCCCC',
+          },
+          fontFamily: {
+            display: ['Bebas Neue', 'cursive'],
+            heading: ['Rajdhani', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-brand-dark text-white font-body overflow-x-hidden">
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="img/logo.png" alt="TTS Tracto Refacciones" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:6563603296" class="nav-phone">
+          <i class="fa-solid fa-phone"></i> 656 360 3296
+        </a>
+        <a href="#contacto" class="btn-primary">Cotizar Ahora</a>
+      </div>
+
+      <button id="hamburger" aria-label="Abrir menú" class="hamburger-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <ul>
+        <li><a href="#catalogo" class="mobile-nav-link">Catálogo</a></li>
+        <li><a href="#beneficios" class="mobile-nav-link">Beneficios</a></li>
+        <li><a href="#galeria" class="mobile-nav-link">Galería</a></li>
+        <li><a href="#servicios" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu-contacts">
+        <a href="tel:6563603296"><i class="fa-solid fa-phone text-brand-red"></i> MX: 656 360 3296</a>
+        <a href="tel:9155051514"><i class="fa-solid fa-phone"></i> USA: 915 505 1514</a>
+        <a href="#contacto" class="btn-primary text-center mt-2">Cotizar Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero-section">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-bg" style="background-image:url('img/hero.jpeg')"></div>
+      <div class="hero-overlay-dark"></div>
+      <div class="hero-overlay-red"></div>
+      <div class="hero-grid-pattern"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow hero-anim" style="--delay:0s">
+          <div class="eyebrow-line"></div>
+          <span>Cd. Juárez, MX &nbsp;·&nbsp; El Paso, TX</span>
+        </div>
+
+        <h1 class="hero-title hero-anim" style="--delay:0.15s">
+          LA POTENCIA<br />
+          <span class="text-brand-red">QUE MUEVE</span><br />
+          MÉXICO Y TEXAS
+        </h1>
+
+        <p class="hero-subtitle hero-anim" style="--delay:0.3s">
+          Refacciones <strong>100% nuevas</strong> para tractocamiones y motores diesel grandes.
+          Mancuernas, transmisiones, motores, cabinas y más.
+        </p>
+
+        <div class="hero-cta hero-anim" style="--delay:0.45s">
+          <a href="#contacto" class="btn-primary btn-lg">
+            <i class="fa-solid fa-truck mr-2"></i>Solicitar Cotización
+          </a>
+          <a href="https://wa.me/526563603296" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-lg">
+            <i class="fa-brands fa-whatsapp mr-2 text-green-400"></i>WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-phones hero-anim" style="--delay:0.6s">
+          <a href="tel:6563603296" class="hero-phone-item">
+            <div class="hero-phone-icon red"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="hero-phone-country">México</div>
+              <div class="hero-phone-number">656 360 3296</div>
+            </div>
+          </a>
+          <a href="tel:9155051514" class="hero-phone-item">
+            <div class="hero-phone-icon gray"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="hero-phone-country">El Paso, TX</div>
+              <div class="hero-phone-number">915 505 1514</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator-wrap">
+        <span>Explorar</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS BAR ===================== -->
+    <section class="stats-bar" aria-label="Estadísticas">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Años de Experiencia</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Clientes Satisfechos</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="1200">0</div>
+          <div class="stat-label">Refacciones Disponibles</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="2">0</div>
+          <div class="stat-label">Países de Cobertura</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MARCAS ===================== -->
+    <section class="marcas-bar" aria-label="Marcas que atendemos">
+      <div class="marcas-container">
+        <div class="marcas-eyebrow">
+          <div class="eyebrow-line"></div>
+          <span>Marcas que Atendemos</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <div class="marcas-grid">
+          <div class="marca-card">
+            <img src="img/marca/marca.jpeg" alt="Kenworth" />
+          </div>
+          <div class="marca-card">
+            <img src="img/marca/marca1.jpeg" alt="Peterbilt" />
+          </div>
+          <div class="marca-card">
+            <img src="img/marca/marca2.jpeg" alt="Freightliner" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATALOG ===================== -->
+    <section id="catalogo" class="section-pad section-alt-bg" aria-labelledby="catalog-title">
+      <div class="section-pattern"></div>
+      <div class="max-container rel">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>Nuestro Catálogo</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 id="catalog-title" class="section-title">REFACCIONES<br /><span class="gradient-text">ESPECIALIZADAS</span></h2>
+          <p class="section-subtitle">Contamos con refacciones nuevas de alta calidad para todos los sistemas de tu tractocamión o motor diesel grande.</p>
+        </div>
+
+        <div class="refaccion-photos stagger-parent">
+          <div class="refaccion-photo stagger-child">
+            <img src="img/refaccion/ref3.jpeg" alt="Motor diesel para tractocamión" loading="lazy" />
+          </div>
+          <div class="refaccion-photo stagger-child">
+            <img src="img/refaccion/ref.jpeg" alt="Transmisión para tractocamión" loading="lazy" />
+          </div>
+          <div class="refaccion-photo stagger-child">
+            <img src="img/refaccion/ref1.jpeg" alt="Refacción para tractocamión" loading="lazy" />
+          </div>
+          <div class="refaccion-photo stagger-child">
+            <img src="img/refaccion/ref4.jpeg" alt="Motor diesel Cummins" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="cards-grid stagger-parent">
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-gears"></i></div>
+              <h3 class="sc-title">MOTORES DIESEL</h3>
+              <p class="sc-desc">Motores completos para tractocamiones y equipos pesados. Todas las marcas y modelos, 100% nuevos y de la más alta calidad.</p>
+              <div class="sc-tags">
+                <span>Cummins</span><span>Detroit</span><span>Caterpillar</span><span>International</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-gear"></i></div>
+              <h3 class="sc-title">TRANSMISIONES</h3>
+              <p class="sc-desc">Cajas de velocidades nuevas para todo tipo de tractocamiones. Transmisiones manuales y automáticas de alta durabilidad.</p>
+              <div class="sc-tags">
+                <span>Eaton Fuller</span><span>Allison</span><span>Manual</span><span>Automática</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-rotate"></i></div>
+              <h3 class="sc-title">MANCUERNAS</h3>
+              <p class="sc-desc">Flechas de transmisión nuevas para eje delantero y trasero. Compatibles con los principales modelos de tracto del mercado.</p>
+              <div class="sc-tags">
+                <span>Eje Delantero</span><span>Eje Trasero</span><span>Universal</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-truck"></i></div>
+              <h3 class="sc-title">CABINAS</h3>
+              <p class="sc-desc">Cabinas completas y partes de cabina para tractocamiones de todas las marcas. Nuevas, con garantía de calidad y procedencia.</p>
+              <div class="sc-tags">
+                <span>Kenworth</span><span>Peterbilt</span><span>Freightliner</span><span>Mack</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3 class="sc-title">REFACCIONES DE MOTOR</h3>
+              <p class="sc-desc">Todo para la reparación de motores diesel: pistones, camisas, bielas, cigüeñales, juntas, sellos y más componentes internos.</p>
+              <div class="sc-tags">
+                <span>Pistones</span><span>Camisas</span><span>Bielas</span><span>Cigüeñales</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card stagger-child">
+            <div class="sc-body">
+              <div class="sc-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h3 class="sc-title">PARTES GENERALES</h3>
+              <p class="sc-desc">Frenos, suspensión, dirección, sistema eléctrico, filtros y todas las partes generales para el mantenimiento de tu unidad.</p>
+              <div class="sc-tags">
+                <span>Frenos</span><span>Suspensión</span><span>Eléctrico</span><span>Filtros</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-cta reveal">
+          <p class="text-brand-silver font-heading text-lg mb-6">¿No encuentras la refacción que necesitas? Contáctanos y la conseguimos.</p>
+          <a href="#contacto" class="btn-primary">Solicitar Refacción Específica <i class="fa-solid fa-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BENEFITS ===================== -->
+    <section id="beneficios" class="section-pad section-dark" aria-labelledby="benefits-title">
+      <div class="red-top-line"></div>
+      <div class="red-bottom-line"></div>
+      <div class="max-container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>¿Por Qué Elegirnos?</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 id="benefits-title" class="section-title">VENTAJAS<br /><span class="gradient-text">COMPETITIVAS</span></h2>
+        </div>
+
+        <div class="benefits-grid stagger-parent">
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Refacciones 100% Nuevas</h3>
+            <p>Todos nuestros productos son refacciones nuevas de primera calidad. Sin reconstruidos, sin incertidumbre — solo piezas que te darán tranquilidad.</p>
+          </div>
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-earth-americas"></i></div>
+            <h3>Cobertura Binacional</h3>
+            <p>Operamos desde Ciudad Juárez y El Paso, TX. Atendemos clientes a ambos lados de la frontera sin complicaciones de ningún tipo.</p>
+          </div>
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Entrega Rápida</h3>
+            <p>Tu unidad parada es pérdida. Priorizamos tiempos de respuesta ágiles y disponemos de inventario para atenderte sin demoras.</p>
+          </div>
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-headset"></i></div>
+            <h3>Asesoría Personalizada</h3>
+            <p>Nuestro equipo de especialistas te ayuda a identificar exactamente la pieza correcta para tu modelo y marca de tractocamión.</p>
+          </div>
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-tag"></i></div>
+            <h3>Precios Competitivos</h3>
+            <p>Calidad de importación a precios justos. Contamos con descuentos especiales para flotas, distribuidores y clientes frecuentes.</p>
+          </div>
+
+          <div class="benefit-card stagger-child">
+            <div class="benefit-icon-wrap"><i class="fa-solid fa-award"></i></div>
+            <h3>15+ Años de Experiencia</h3>
+            <p>Más de quince años especializándonos en la frontera México–EE.UU. Conocemos el mercado, las marcas y las necesidades del transportista.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="galeria" class="section-pad section-alt-bg" aria-labelledby="gallery-title">
+      <div class="max-container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">
+            <div class="eyebrow-line"></div>
+            <span>Nuestro Trabajo</span>
+            <div class="eyebrow-line"></div>
+          </div>
+          <h2 id="gallery-title" class="section-title">GALERÍA<br /><span class="gradient-text">INDUSTRIAL</span></h2>
+        </div>
+
+        <div class="gallery-grid stagger-parent">
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/1.jpeg" alt="Inventario de refacciones" loading="lazy" />
+            <div class="gallery-overlay"><span>Inventario</span></div>
+          </div>
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/2.jpeg" alt="Tractocamión" loading="lazy" />
+            <div class="gallery-overlay"><span>Tractocamiones</span></div>
+          </div>
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.36%20PM.jpeg" alt="Refacciones" loading="lazy" />
+            <div class="gallery-overlay"><span>Refacciones</span></div>
+          </div>
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.37%20PM%20(1).jpeg" alt="Motor diesel" loading="lazy" />
+            <div class="gallery-overlay"><span>Motores</span></div>
+          </div>
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.37%20PM%20(3).jpeg" alt="Transmisión" loading="lazy" />
+            <div class="gallery-overlay"><span>Transmisiones</span></div>
+          </div>
+          <div class="gallery-item stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.38%20PM%20(1).jpeg" alt="Partes diesel" loading="lazy" />
+            <div class="gallery-overlay"><span>Partes Diesel</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.38%20PM%20(3).jpeg" alt="Cabina de camión" loading="lazy" />
+            <div class="gallery-overlay"><span>Cabinas</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.39%20PM%20(3).jpeg" alt="Inventario" loading="lazy" />
+            <div class="gallery-overlay"><span>Inventario</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.40%20PM%20(1).jpeg" alt="Refacciones" loading="lazy" />
+            <div class="gallery-overlay"><span>Refacciones</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.40%20PM%20(3).jpeg" alt="Motor diesel" loading="lazy" />
+            <div class="gallery-overlay"><span>Motores</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.41%20PM%20(2).jpeg" alt="Tractocamión" loading="lazy" />
+            <div class="gallery-overlay"><span>Tractocamiones</span></div>
+          </div>
+          <div class="gallery-item gallery-extra stagger-child">
+            <img src="img/galeria/WhatsApp%20Image%202026-06-15%20at%201.34.41%20PM.jpeg" alt="Partes diesel" loading="lazy" />
+            <div class="gallery-overlay"><span>Partes Diesel</span></div>
+          </div>
+        </div>
+
+        <div class="gallery-more-wrap reveal">
+          <button id="gallery-more-btn" class="btn-secondary btn-lg">
+            <i class="fa-solid fa-images mr-2"></i><span>Ver más fotos</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES & LOGISTICS ===================== -->
+    <section id="servicios" class="section-pad section-dark" aria-labelledby="services-title">
+      <div class="red-top-line"></div>
+      <div class="max-container">
+        <div class="logistics-grid">
+
+          <div class="reveal">
+            <div class="section-eyebrow" style="justify-content:flex-start">
+              <div class="eyebrow-line"></div>
+              <span>Cobertura y Logística</span>
+            </div>
+            <h2 id="services-title" class="section-title left-title">SERVICIO<br /><span class="gradient-text">BINACIONAL</span></h2>
+
+            <div class="info-cards">
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-location-dot text-brand-red"></i></div>
+                <div>
+                  <h4>Ciudad Juárez, México</h4>
+                  <p>Rancho Agua Caliente y Av. Tecnológico,<br />Fracc. Pradera Dorada, C.P. 32618</p>
+                  <span class="info-ref"><i class="fa-solid fa-map-pin"></i> Justo atrás de Costco Cd. Juárez</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-phone text-brand-red"></i></div>
+                <div>
+                  <h4>Teléfonos de Ventas</h4>
+                  <a href="tel:6563603296">MX: 656 360 3296</a>
+                  <a href="tel:9155051514">USA: 915 505 1514</a>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-clock text-brand-red"></i></div>
+                <div>
+                  <h4>Horarios de Atención</h4>
+                  <p>Lunes – Viernes: 8:00 AM – 6:00 PM</p>
+                  <p>Sábado: 8:00 AM – 2:00 PM</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-brands fa-whatsapp" style="color:#22c55e"></i></div>
+                <div>
+                  <h4>Atención por WhatsApp</h4>
+                  <p>Recibe asesoría y cotiza directamente por WhatsApp en tiempo real.</p>
+                  <a href="https://wa.me/526563603296" target="_blank" rel="noopener noreferrer" class="wa-inline-link">
+                    Iniciar chat <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="reveal map-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Pradera+Dorada+Ciudad+Juarez+Chihuahua+Mexico&output=embed"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Tracto Refacciones – Cd. Juárez, Chihuahua">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contacto" class="section-pad section-alt-bg" aria-labelledby="contact-title">
+      <div class="contact-glow"></div>
+      <div class="max-container rel">
+        <div class="contact-grid">
+
+          <!-- Form Column -->
+          <div class="reveal">
+            <div class="section-eyebrow" style="justify-content:flex-start">
+              <div class="eyebrow-line"></div>
+              <span>Escríbenos</span>
+            </div>
+            <h2 id="contact-title" class="section-title left-title">SOLICITA TU<br /><span class="gradient-text">COTIZACIÓN</span></h2>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Nombre Completo *</label>
+                  <input type="text" name="name" class="form-input" placeholder="Tu nombre completo" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Empresa / Flotilla</label>
+                  <input type="text" name="empresa" class="form-input" placeholder="Nombre de tu empresa" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Teléfono *</label>
+                  <input type="tel" name="telefono" class="form-input" placeholder="Ej. 656 123 4567" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">País</label>
+                  <select name="pais" class="form-input">
+                    <option value="MX">México</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Refacción / Parte Necesaria *</label>
+                <input type="text" name="refaccion" class="form-input" placeholder="Ej. Motor Cummins ISX, Transmisión Eaton Fuller 10 vel…" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Marca y Modelo del Tractocamión</label>
+                <input type="text" name="modelo" class="form-input" placeholder="Ej. Kenworth T680 2020, Peterbilt 389…" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Mensaje Adicional</label>
+                <textarea name="mensaje" class="form-input form-textarea" placeholder="Detalles adicionales, número de serie, urgencia…" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Enviar Solicitud
+              </button>
+              <a href="https://wa.me/526563603296?text=Hola%2C%20necesito%20cotizar%20refacciones%20para%20mi%20tractocami%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-wa btn-full mt-3">
+                <i class="fa-brands fa-whatsapp mr-2"></i>O Cotiza por WhatsApp
+              </a>
+              <div id="form-success" class="form-success hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>¡Solicitud enviada! Te contactaremos a la brevedad.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Info Column -->
+          <div class="reveal">
+            <div class="section-eyebrow" style="justify-content:flex-start">
+              <div class="eyebrow-line"></div>
+              <span>Contáctanos Directo</span>
+            </div>
+            <h2 class="section-title left-title">ESTAMOS<br /><span class="gradient-text">DISPONIBLES</span></h2>
+
+            <div class="contact-phones">
+              <div class="contact-phone-item">
+                <div class="cp-icon red"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="cp-country">Ciudad Juárez, México</div>
+                  <a href="tel:6563603296" class="cp-number">656 360 3296</a>
+                </div>
+              </div>
+              <div class="contact-phone-item">
+                <div class="cp-icon gray"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="cp-country">El Paso, Texas — EE.UU.</div>
+                  <a href="tel:9155051514" class="cp-number">915 505 1514</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="wa-cta-box">
+              <div class="wa-cta-header">
+                <i class="fa-brands fa-whatsapp wa-cta-icon"></i>
+                <div>
+                  <strong>WhatsApp Ventas</strong>
+                  <span>Respuesta inmediata en horario de atención</span>
+                </div>
+              </div>
+              <a href="https://wa.me/526563603296?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20refacciones%20para%20mi%20tractocami%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-wa btn-full btn-lg">
+                <i class="fa-brands fa-whatsapp mr-2"></i>Chatear Ahora — 656 360 3296
+              </a>
+            </div>
+
+            <div class="address-box">
+              <h4><i class="fa-solid fa-location-dot text-brand-red mr-2"></i>Nuestra Ubicación</h4>
+              <address>
+                Rancho Agua Caliente y Av. Tecnológico,<br />
+                Fracc. Pradera Dorada, C.P. 32618<br />
+                Cd. Juárez, Chihuahua, México
+              </address>
+              <p class="address-ref"><i class="fa-solid fa-circle-info"></i> Justo atrás de Costco Cd. Juárez</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="max-container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo">
+            <img src="img/logo.png" alt="TTS Tracto Refacciones" class="footer-logo-img" />
+          </a>
+          <p>Especialistas en refacciones nuevas para tractocamiones y motores diesel grandes. Operamos en la frontera México–Estados Unidos desde Cd. Juárez, Chihuahua.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:6563603296"><i class="fa-solid fa-phone text-brand-red"></i> MX: 656 360 3296</a></li>
+            <li><a href="tel:9155051514"><i class="fa-solid fa-phone"></i> USA: 915 505 1514</a></li>
+            <li><a href="https://wa.me/526563603296" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="color:#22c55e"></i> WhatsApp: 656 360 3296</a></li>
+            <li><i class="fa-solid fa-location-dot text-brand-red"></i> Fracc. Pradera Dorada, Cd. Juárez, Chih.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Tracto Refacciones. Todos los derechos reservados.</p>
+        <p><i class="fa-solid fa-map-pin text-brand-red"></i> Cd. Juárez, Chihuahua, México &amp; El Paso, Texas, EE.UU.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button (Bottom Left) -->
+  <a id="wa-float"
+     href="https://wa.me/526563603296?text=Hola%2C%20necesito%20información%20sobre%20refacciones"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <div class="wa-float-ring"></div>
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>¿Necesitas ayuda?</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button id="lb-close" class="lb-close" aria-label="Cerrar">&times;</button>
+    <button id="lb-prev" class="lb-nav lb-prev" aria-label="Foto anterior">&#8249;</button>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="Foto galería" />
+    </div>
+    <button id="lb-next" class="lb-nav lb-next" aria-label="Foto siguiente">&#8250;</button>
+    <div class="lb-counter"><span id="lb-current">1</span>&nbsp;/&nbsp;<span id="lb-total">12</span></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
